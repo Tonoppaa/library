@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC221F2D-E7C0-4183-8496-C3A500734577}|kirjasto_k\u00E4ytt\u00F6liittym\u00E4_ver1.csproj|c:\\users\\tonoppa\\desktop\\ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\johdatus ohjelmointiin ja tietorakenteisiin\\teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\kirjaudu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC221F2D-E7C0-4183-8496-C3A500734577}|kirjasto_k\u00E4ytt\u00F6liittym\u00E4_ver1.csproj|solutionrelative:kirjaudu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC221F2D-E7C0-4183-8496-C3A500734577}|kirjasto_k\u00E4ytt\u00F6liittym\u00E4_ver1.csproj|C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\asiakas_etusivu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC221F2D-E7C0-4183-8496-C3A500734577}|kirjasto_k\u00E4ytt\u00F6liittym\u00E4_ver1.csproj|solutionrelative:asiakas_etusivu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC221F2D-E7C0-4183-8496-C3A500734577}|kirjasto_k\u00E4ytt\u00F6liittym\u00E4_ver1.csproj|C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\asiakas_etusivu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC221F2D-E7C0-4183-8496-C3A500734577}|kirjasto_k\u00E4ytt\u00F6liittym\u00E4_ver1.csproj|solutionrelative:asiakas_etusivu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC221F2D-E7C0-4183-8496-C3A500734577}|kirjasto_k\u00E4ytt\u00F6liittym\u00E4_ver1.csproj|C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\asiakas_aineistot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC221F2D-E7C0-4183-8496-C3A500734577}|kirjasto_k\u00E4ytt\u00F6liittym\u00E4_ver1.csproj|solutionrelative:asiakas_aineistot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "kirjaudu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\kirjaudu.cs",
+              "RelativeDocumentMoniker": "kirjaudu.cs",
+              "ToolTip": "C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\kirjaudu.cs [Design]",
+              "RelativeToolTip": "kirjaudu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T09:41:46.134Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "asiakas_aineistot.cs",
+              "DocumentMoniker": "C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\asiakas_aineistot.cs",
+              "RelativeDocumentMoniker": "asiakas_aineistot.cs",
+              "ToolTip": "C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\asiakas_aineistot.cs",
+              "RelativeToolTip": "asiakas_aineistot.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T07:33:27.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "asiakas_etusivu.cs",
+              "DocumentMoniker": "C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\asiakas_etusivu.cs",
+              "RelativeDocumentMoniker": "asiakas_etusivu.cs",
+              "ToolTip": "C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\asiakas_etusivu.cs",
+              "RelativeToolTip": "asiakas_etusivu.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAswEAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T07:28:16.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "asiakas_etusivu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_versio2\\asiakas_etusivu.cs",
+              "RelativeDocumentMoniker": "asiakas_etusivu.cs",
+              "ToolTip": "C:\\Users\\Tonoppa\\Desktop\\Ohjelmistokehitt\u00E4j\u00E4 koulun tiedostoja\\Johdatus ohjelmointiin ja tietorakenteisiin\\Teht\u00E4vi\u00E4\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_ver1\\asiakas_etusivu.cs [Design]",
+              "RelativeToolTip": "..\\kirjasto_k\u00E4ytt\u00F6liittym\u00E4_ver1\\asiakas_etusivu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T07:26:04.931Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

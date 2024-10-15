@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="aineistot_hkunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="asiakas_aineistot2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="asiakas_etusivu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="etusivu_hkunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="haku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="hakutulos_asiakastiedot_hkunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="kirja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="kirja2_hkunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="kirja2_hkunta_kirjavaraus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="kirjaudu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="kirjaudu_hkunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="muokkaa_kirja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="omat_lainat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="omat_tiedot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="oma_sivu_hkunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="oma_sivu_hkunta_ssanavaihto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="otayhteytta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="otayhteytta_hkunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="tarkka_haku_asiakastiedot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="tarkka_haku_hkunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="unohtunut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="uusiasiakas_tai_uusikirja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="uusi_asiakas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="uusi_kirja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vahvista_asiakkaanpoisto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vahvista_kirjapoisto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vaihda_salasana_asiakas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,186 @@
+CREATE TABLE Asiakas (
+   asnum char(7),
+   enimi varchar(15),
+   snimi varchar(30),
+   loso varchar(45),
+   pno char(5),
+   ptp varchar(30),
+   puh varchar(20),
+   salasana char(4),
+   last_login_as datetime,
+   PRIMARY KEY (asnum)
+ ) ENGINE=InnoDB
+
+CREATE TABLE Kirja (
+   isbn char(13),
+   kirtu char(8),
+   nimi varchar(55),
+   julkaistu int,
+   sivut int,
+   kategoria varchar(20),
+   kuva longblob,
+   kpl INT,
+   PRIMARY KEY (isbn)
+   FOREIGN KEY (kirtu) REFERENCES Kirjailija (kirtunnus)
+)  ENGINE=InnoDB
+
+CREATE TABLE Kirjailija (
+  kirtunnus char(8),
+  enimi char(15),
+  snimi char(30),
+  PRIMARY KEY (kirtunnus)
+) ENGINE=InnoDB
+
+CREATE TABLE Lainakohde (
+  tunnus char(15),
+  ktun char(13),
+  PRIMARY KEY (tunnus),
+  FOREIGN KEY (ktun) REFERENCES Kirja (isbn)
+) ENGINE=InnoDB
+
+CREATE TABLE Lainamäärä (
+  astun char(7),
+  kpl bigint
+) ENGINE=InnoDB
+
+CREATE TABLE Lainarivi (
+  rivinum int,
+  ltunnus char(15),
+  kohdetun char(15),
+  PRIMARY KEY (rivinum),
+  FOREIGN KEY (ltunnus) REFERENCES lainaus (lainanum),
+  FOREIGN KEY (kohdetun) REFERENCES lainakohde (tunnus)
+) ENGINE=InnoDB
+
+CREATE TABLE Lainaus (
+  lainanum char(7),
+  astun char(7),
+  pvm date,
+  PRIMARY KEY lainanum),
+  FOREIGN KEY (astun) REFERENCES Asiakas (asnum)
+) ENGINE=InnoDB
+
+CREATE TABLE Maakoodi (
+  lyhenne char(2),
+  maanimi varchar(60),
+  PRIMARY KEY (lyhenne)
+) ENGINE=InnoDB
+
+CREATE TABLE Tyontekija (
+  ttnum char(7),
+  enimi varchar(15),
+  snimi varchar(30),
+  loso varchar(45),
+  pno char(5),
+  ptp varchar(30),
+  puh varchar(20),
+  salasana char(4),
+  last_login datetime,
+  PRIMARY KEY (ttnum)
+) ENGINE=InnoDB
+
+-------------------------------------------------------------------------------
+
+INSERT INTO-lauseet:
+
+INSERT INTO Kirjailija (kirtunnus, enimi, snimi) VALUES 
+("KTSEBM01", "Henning", "Mankell"), 
+("KTFIBH01", "Simo", "Hämäläinen"), 
+("KTFICA01", "Kati", "Aksila-Konnos"), 
+("KTFICK01", "Reetta", "Koivisto"), 
+("KTGBAT01", "J.R.R.", "Tolkien"), 
+("KTUSBH01", "Thomas", "Harris"), 
+("KTUSBR01", "Anne", "Rice"), 
+("KTGBBC01", "Arthur", "Clarke"), 
+("KTUSBM01", "Thomas", "Madden"), 
+("KTFIBN01", "Miika", "Nousiainen"), 
+("KTXXXXXX", "Tuntematon", "Kirjailija"),  
+("KTCNXT01", "Sun", "Tzu"), 
+("KTUSBG01", "Tess", "Gerritsen"), 
+("KTUSBK01", "Stephen", "King");
+
+INSERT INTO Kirja (isbn, kirtu, nimi, julkaistu, sivut) VALUES 
+("9789512080618", "KTFIBH01", "Kätkäläisen tarina", 2009, 557), 
+("9789512080619", "KTGBAT01","Taru sormusten herrasta", 1954, 1221), 
+("9789512080625", "KTGBBC01", "Avaruusseikkailu", 2015, 320), 
+("9789526938127", "KTFICA01", "Kaverusten lorukirja", 2021, 26), 
+("9789526938110", "KTFICK01", "Kaverusten tunnekirja", 2021, 64), 
+("9789516439900", "KTSEBM01", "Pyramidi", 2002, 400), 
+("9789512080627", "KTUSBM01", "Historian käännekohtia", 2005, 400), 
+("9780385339483", "KTUSBH01", "Hannibal", 2000, 547), 
+("9789511127338", "KTUSBR01", "Vampyyri Lestat", 1993, 572), 
+("9789516629561", "KTCNXT01", "Sodankäynnin taito", 2005, 148), 
+("9789511225959", "KTUSBG01", "Luutarha", 2008, 383), 
+("9789501243745", "KTUSBK01", "Uinu, uinu, lemmikkini", 1983, 416), 
+("9789512080611", "KTXXXXXX", "Kätkäläisen tarinat jatkuvat", 2010, 439), 
+("9789511354031", "KTFIBN01", "Pintaremontti", 2020, 365),
+("9513135071111", "KTGBCR01", "Harry Potter ja puoliverinen prinssi", 2006, 698), 
+("9780340608456", "KTUSBK01", "Uneton yö", 1997, 912), 
+("9780141395869", "KTITAA01", "Itselleni", 2014, 416); 
+
+INSERT INTO Asiakas (asnum, enimi, snimi, loso, pno, ptp, puh, salasana) VALUES 
+("AS00124", "Olli", "Lainaaja", "Kotikatu 1 A2", "65100", "Vaasa", "040 123 4567", "1234"), 
+("AS00125", "Maija", "Mehiläinen", "Katunumero 1 A3", "00100", "Helsinki", "0401122334", "1234"), 
+("AS00126", "Matti", "Meikäläinen", "Katunumero 4 A5", "00370", "Espoo", "040 112 2555", "1234"), 
+("AS00127", "Leena", "Luonto", "Rantatie 1 A6", "04130", "Sipoo", "040 044 5678", "1234"), 
+("AS00128", "Teppo", "Tietäjä", "Majakatu 3 C4", "33100", "Tampere", "050 112 2334", "1234"), 
+("AS00129", "Milla", "Magia", "Katutie 3 B5", "00100", "Helsinki", "0407654321", "1234"), 
+("AS00130", "Oliver", "Oraakkeli", "Tontuntie 2 G5", "65150", "Oulu", "0409876543", "1234"), 
+("AS00131", "Ville", "Vallaton", "Lauritsalantie 20 D15", "53300", "Lappeenranta", "0459846227", "1234"),
+("AS00132", "Oskari", "Ohjelmistola", "Ohjelmointikatu 10", "13100", "Hämeenlinna", "0500123456", "1234"),
+("AS00133", "Tauno", "Tavallinen", "Oksasenkatu 4 A8", "53100", "Lappeenranta", "0442456378", "1234"); 
+
+INSERT INTO Lainakohde (tunnus, ktun) VALUES 
+("019789512080618", "9789512080618"), 
+("029789512080619", "9789512080619"), 
+("019789512080619", "9789512080619"), 
+("029789526938127", "9789526938127"), 
+("029789526938110", "9789526938110"), 
+("019780385339483", "9780385339483"), 
+("019789511127338", "9789511127338"), 
+("019789516629561", "9789516629561"), 
+("029789516629561", "9789516629561"), 
+("019789501243745", "9789501243745")
+("019789512080611", "9789512080611"), 
+("019789511225959", "9789511225959"), 
+("019513135071111", "9513135071111"), 
+("019780340608456", "9780340608456"), 
+("029780340608456", "9780340608456"), 
+("039780340608456", "9780340608456"), 
+("019780141395869", "9780141395869"),
+("019789512080618", "9789512080618");
+ 
+INSERT INTO Lainaus (lainanum, astun, pvm) VALUES 
+("2401001", "AS00124", "2024-01-24"), 
+("2401002", "AS00125", "2024-01-25"), 
+("2401003", "AS00126", "2024-01-26"), 
+("2401004", "AS00127", "2024-01-31"), 
+("2401005", "AS00128", "2024-01-31"), 
+("2401006", "AS00129", "2024-01-24"), 
+("2401007", "AS00130", "2024-01-24"), 
+ ("2401008", "AS00131", "2024-01-27"), 
+ ("2401009", "AS00131", "2024-01-30"), 
+("2401010", "AS00132", "2024-01-31"), 
+("2402001", "AS00133", "2024-02-10"), 
+("2402002", "AS00133", "2024-02-12"), 
+("2402003", "AS00133", "2024-02-21"); 
+
+INSERT INTO Lainarivi (rivinum, ltunnus, kohdetun) VALUES 
+(1, "2401001", "019789512080618"), 
+(2, "2401002", "029789512080619"), 
+(3, "2401003", "019789501243745"), 
+(4, "2401004", "029789526938110"), 
+(5, "2401005", "029789526938127"), 
+(6, "2401006", "019780385339483"), 
+(7, "2401007", "019789511127338"), 
+(8, "2401008", "019789516629561"), 
+(9, "2401008", "029789526938110"), 
+(10, "2401009", "029789526938127"), 
+(11, "2401010", "019789501243745"),
+(12, "2402001", "019780340608456"),  
+(13, "2402002", "019780141395869"), 
+(14, "2401010", "029780340608456"),
+(15, "2402003", "019789512080618");
+
+INSERT INTO Tyontekija (ttnum, enimi, snimi, loso, pno, ptp, puh, salasana) VALUES 
+("TT00124", "Tero", "Työntekijä", "Tekijäkatu 1 A 1", "33310", "Tampere", "0400123123, 1234");
