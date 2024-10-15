@@ -2,6 +2,8 @@
 
 Tämä on kirjasto-ohjelma, jossa on kaksi osapuolta: Asiakas ja henkilökunta. Asiakkaalla ja henkilökunnan jäsenellä on mahdollista kirjautua kirjaston järjestelmään henkilökohtaisella käyttäjätunnuksella ja salasanalla. Ominaisuuksissa on tarkemmin eriteltynä, mitä asiakas tai henkilökunta voivat tehdä.
 
+Voit katsoa ohjelman toimintaa asiakkaan ja henkilökunnan näkökulmasta videoiden muodossa täältä: https://www.dropbox.com/scl/fo/hffr02krofm8j26syamfw/AKSvZEh8xHftpTSNn-sSPAw?rlkey=fgq690pwl3qaujx9mcroieym5&st=2xpe6sgx&dl=0
+
 # Edellytykset
 
 Tässä projektissa tarvitaan seuraavia asioita:
